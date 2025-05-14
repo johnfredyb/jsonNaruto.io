@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Api Json</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .link-box {
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .link-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-box a {
+            text-decoration: none;
+            color: #1a73e8;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 0.95em;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Naruto</p>
-    <a href="https://johnfredyb.github.io/jsonNaruto.io/Json/jsonNaruto.json">Ir a Json</a>
+
+    <h1>Visualización de Imágenes</h1>
+
+    <div class="link-container">
+        <div class="link-box">
+            <a href="https://johnfredyb.github.io/jsonNaruto.io/Json/jsonNaruto.json">Versión Antigua (iframe + JSON)</a>
+            <div class="description">Usa un iframe para cargar imágenes desde JSON</div>
+        </div>
+
+        <div class="link-box">
+            <a href="https://johnfredyb.github.io/jsonNaruto.io/Json/jsonNaruto.json">Versión Actualizada (con &lt;img&gt;)</a>
+            <div class="description">Carga las imágenes directamente con la etiqueta &lt;img&gt;</div>
+        </div>
+    </div>
+
+
+
+
+    <h1>Naruto</h1>
+    
+
+    <img src="https://johnfredyb.github.io/jsonNaruto.io/img/kakashi.jpg" alt="choji">
 </body>
+
 </html>
